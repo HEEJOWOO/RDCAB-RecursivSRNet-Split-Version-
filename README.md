@@ -18,6 +18,7 @@ RDCAB-RecursiveSRNet, which was submitted to the existing IPIU conference, has a
 
 
 ## Experiments
+Ubuntu 18.04, RTX 3090 24G
 Train : DIV2K
 Test : Set5, Set14, BSD100, Urban100
 
