@@ -25,7 +25,6 @@ if __name__ == '__main__':
     parser.add_argument('--growth-rate', type=int, default=64)
     parser.add_argument('--B', type=int, default=1)
     parser.add_argument('--U', type=int, default=9)
-    parser.add_argument('--num-layers', type=int, default=8)
     parser.add_argument('--scale', type=int, default=4)
     parser.add_argument('--patch-size', type=int, default=32)
     parser.add_argument('--lr', type=float, default=1e-4)
@@ -43,7 +42,7 @@ if __name__ == '__main__':
     cudnn.benchmark = True
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     torch.manual_seed(args.seed)
-    model = Net(scale_factor=args.scale,num_channels=args.num_channels,num_features=args.num_features,growth_rate=args.growth_rate,num_layers=args.num_layers,B=args.B, U=args.U).to(device)
+    model = Net(scale_factor=args.scale,num_channels=args.num_channels,num_features=args.num_features,growth_rate=args.growth_rate,B=args.B, U=args.U).to(device)
     #print model
     print(model)
     
