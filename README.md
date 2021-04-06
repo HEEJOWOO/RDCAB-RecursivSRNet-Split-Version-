@@ -25,3 +25,7 @@ Test : Set5, Set14, BSD100, Urban100
 |-|---|--------------------|-------------|
 |Parameters|22M|2.1M|1.2M|
 
+|-|RDN|RDCAB-RecursvieSRNet|Split Version|
+|-|---|--------------------|-------------|
+|Muti-Adds|1309G|750G|567G|
+
