@@ -18,16 +18,16 @@ RDCAB-RecursiveSRNet, which was submitted to the existing IPIU conference, has a
 
 
 ## Experiments
-At this time, learning was conducted only at 4x magnification, and it will be studied at 2x and 3x magnifications in the future.
+* At this time, learning was conducted only at 4x magnification, and it will be studied at 2x and 3x magnifications in the future.
 
-Check train.py for detailed network configuration.
+* Check train.py for detailed network configuration.
 
-Ubuntu 18.04, RTX 3090 24G
-Train : DIV2K
-Test : Set5, Set14, BSD100, Urban100
+* Ubuntu 18.04, RTX 3090 24G
+* Train : DIV2K
+* Test : Set5, Set14, BSD100, Urban100
 
-The DIV2K, Set5 dataset converted to HDF5 can be downloaded from the links below.
-Download Igor Pro to check h5 files.
+* The DIV2K, Set5 dataset converted to HDF5 can be downloaded from the links below.
+* Download Igor Pro to check h5 files.
 |Dataset|Scale|Type|Link|
 |-------|-----|----|----|
 |Div2K|x2|Train|[Down](https://www.dropbox.com/s/41sn4eie37hp6rh/DIV2K_x2.h5?dl=0)|
@@ -53,7 +53,7 @@ Download Igor Pro to check h5 files.
 |-|---|--------------------|-------------|
 |Multi-Adds|1,309G|750G|567G|
 
-Compared with the existing RDCAB-RecursvieSRNet, the performance decreased by 0.05 in Set5 and 0.08 in Urban100, but overall processing time was faster, the number of parameters was 1.75 times, and Multi-adds was 1.3 times lighter.
+* Compared with the existing RDCAB-RecursvieSRNet, the performance decreased by 0.05 in Set5 and 0.08 in Urban100, but overall processing time was faster, the number of parameters was 1.75 times, and Multi-adds was 1.3 times lighter.
 
 ## Reference
 [RDN](https://arxiv.org/abs/1802.08797)
