@@ -27,5 +27,13 @@ Test : Set5, Set14, BSD100, Urban100
 
 |-|RDN|RDCAB-RecursvieSRNet|Split Version|
 |-|---|--------------------|-------------|
-|Muti-Adds|1,309G|750G|567G|
+|Multi-Adds|1,309G|750G|567G|
 
+Compared with the existing RDCAB-RecursvieSRNet, the performance decreased by 0.05 in Set5 and 0.08 in Urban100, but overall processing time was faster, the number of parameters was 1.75 times, and Multi-adds was 1.3 times lighter.
+
+## Reference
+[RDN](https://arxiv.org/abs/1802.08797)
+[DRRN](https://openaccess.thecvf.com/content_cvpr_2017/papers/Tai_Image_Super-Resolution_via_CVPR_2017_paper.pdf)
+[RCAN](https://arxiv.org/abs/1807.02758)
+[IMDN](https://arxiv.org/abs/1909.11856)
+[AWSRN](https://arxiv.org/abs/1904.02358)
