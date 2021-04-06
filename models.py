@@ -21,13 +21,13 @@ def stdv_channels(F):
     return F_variance.pow(0.5)
     
 class RDCAB(nn.Module):
-    def __init__(self, in_channels, growth_rate, num_layers):
+    def __init__(self, in_channels, growth_rate):
         super(RDCAB, self).__init__()
         #Split Mechanism
         distillation_rate=0.25
         self.distilled_channels = int(in_channels * distillation_rate)
         self.remaining_channels = int(in_channels - self.distilled_channels)
-        gc = 64 
+        gc = growth_rate
         fc = 48
         
         self.layer1 = nn.Sequential(nn.Conv2d(in_channels + 0 * gc, gc, 3, padding=1, bias=True), nn.ReLU(inplace=True))
@@ -90,13 +90,12 @@ class RDCAB(nn.Module):
 
 
 class RecursiveBlock(nn.Module):
-    def __init__(self,num_channels, num_features, growth_rate, num_layers, B, U):
+    def __init__(self,num_channels, num_features, growth_rate, B, U):
         super(RecursiveBlock, self).__init__()
         self.U = U
         self.G0 = num_features
         self.G = growth_rate
-        self.C = num_layers
-        self.rdbs = RDCAB(self.G0, self.G, self.C) #residual dense channel attention block & Split Mechanism
+        self.rdbs = RDCAB(self.G0, self.G) #residual dense channel attention block & Split Mechanism
         
     def forward(self, sfe2):
         global concat_LF
@@ -109,7 +108,7 @@ class RecursiveBlock(nn.Module):
         return x
         
 class DRRDB(nn.Module):
-    def __init__(self, scale_factor, num_channels, num_features, growth_rate, num_layers, B, U):
+    def __init__(self, scale_factor, num_channels, num_features, growth_rate, B, U):
         super(DRRDB, self).__init__()
         self.B = B
         self.G0 = num_features
@@ -123,7 +122,6 @@ class DRRDB(nn.Module):
         self.recursive_SR = nn.Sequential(*[RecursiveBlock(num_channels if i==0 else num_features,
         num_features,
         growth_rate, 
-        num_layers, 
         B, 
         U) for i in range(B)])
         # Global Feature Fusion
