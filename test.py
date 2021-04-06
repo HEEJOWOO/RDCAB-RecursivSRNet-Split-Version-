@@ -17,13 +17,12 @@ if __name__ == '__main__':
     parser.add_argument('--scale', type=int, default=4)
     parser.add_argument('--num-features', type=int, default=64)
     parser.add_argument('--growth-rate', type=int, default=64)
-    parser.add_argument('--num-layers', type=int, default=8)
     parser.add_argument('--num-channels', type=int, default=3)
     parser.add_argument('--self-ensemble', type=bool, default=False)
     args = parser.parse_args()
     cudnn.benchmark = True
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    model = Net(scale_factor=args.scale,num_channels=args.num_channels,num_features=args.num_features,growth_rate=args.growth_rate,num_layers=args.num_layers,B=args.B, U=args.U).to(device)
+    model = Net(scale_factor=args.scale,num_channels=args.num_channels,num_features=args.num_features,growth_rate=args.growth_rate,B=args.B, U=args.U).to(device)
     state_dict = model.state_dict()
     for n, p in torch.load(args.weights_file, map_location=lambda storage, loc: storage).items():
         if n in state_dict.keys():
