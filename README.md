@@ -22,12 +22,17 @@ RDCAB-RecursiveSRNet, which was submitted to the existing IPIU conference, has a
 
 * Check train.py for detailed network configuration.
 
+
+* Pretrained: Use x4 magnification weight for weights dir
+
+
 * Ubuntu 18.04, RTX 3090 24G
 * Train : DIV2K
 * Test : Set5, Set14, BSD100, Urban100
 
 * The DIV2K, Set5 dataset converted to HDF5 can be downloaded from the links below.
 * Download Igor Pro to check h5 files.
+
 
 
 |Dataset|Scale|Type|Link|
