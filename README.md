@@ -21,7 +21,7 @@ Test : Set5, Set14, BSD100, Urban100
 |RDCAB-RecursiveSRNet|32.29 / 0.078|28.64 / 0.105|27.62 / 0.012|26.16 / 0.150|
 |Split Vesrion|32.24 / 0.057|28.65 / 0.083|27.62 / 0.016|26.08 / 0.107|
 
-||RDN|RDCAB-RecursvieSRNet|Split Version|
-||---|--------------------|-------------|
+|-|RDN|RDCAB-RecursvieSRNet|Split Version|
+|-|---|--------------------|-------------|
 |Parameters|22M|2.1M|1.2M|
 
