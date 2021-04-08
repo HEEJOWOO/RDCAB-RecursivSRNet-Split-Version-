@@ -2,9 +2,9 @@
 
 [RDCAB-Recursvie-SRNet](https://github.com/HEEJOWOO/RDCAB-RecursiveSRNet-2021.02.IPIU-) 
 
-[YouTube](https://www.youtube.com/watch?v=BW7Z-MUu7m4) 
+[RDCAB-RecursvieSRNet→YouTube](https://www.youtube.com/watch?v=BW7Z-MUu7m4) 
 
-[IPIU](http://www.ipiu.or.kr/2021/index.php)
+[RDCAB-RecursvieSRNet→IPIU](http://www.ipiu.or.kr/2021/index.php)
 
 # RDCAB-RecursivSRNet(Split-Version)
 ## Abstract
