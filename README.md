@@ -8,7 +8,7 @@
 
 # RDCAB-RecursivSRNet(Split-Version)
 ## Abstract
-RDCAB-RecursiveSRNet, which was submitted to the existing IPIU conference, has about 10 times less number of parameters than RDN, and has been reduced by 1.7 times from 1309G to 750G based on a 4x magnification factor, even in terms of Multi-Adds. However, the recursion structure increases or widens the depth of the network to prevent recursion and loss of recursion, and thus requires a lot of computation and memory consumption, which is difficult to apply to a real-time or low-power computer. Therefore, I am continuously researching to lighten RDCAB-RecursiveSRNet, and the final goal is to mount it on an embedded board.
+RDCAB-RecursiveSRNet, which was submitted to the existing IPIU conference, has about 10 times less number of parameters than RDN, and has been reduced by 1.7 times from 1309G to 750G based on a x4 magnification factor, even in terms of Multi-Adds. However, the recursion structure increases or widens the depth of the network to prevent recursion and loss of recursion, and thus requires a lot of computation and memory consumption, which is difficult to apply to a real-time or low-power computer. Therefore, I am continuously researching to lighten RDCAB-RecursiveSRNet, and the final goal is to mount it on an embedded board.
 * Knowledge distillation : Transmitting information from large and heavy models to small and light models to train them to make more accurate inferences.
 ## Differences from existing RDCAB-RecursvieSRNet
 1) The input image is made at the same magnification as the output using the bicubic interpolation method, and the final reconstructed image and the elementwise sum are performed.
