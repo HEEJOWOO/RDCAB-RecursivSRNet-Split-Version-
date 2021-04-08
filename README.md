@@ -48,9 +48,9 @@ RDCAB-RecursiveSRNet, which was submitted to the existing IPIU conference, has a
 
 |x4|Set5/ProcessTime|Set14/ProcessTime|BSD100/ProcessTime|Urban100/ProcessTime|
 |--|----------------|-----------------|------------------|--------------------|
-|RDN|32.47 / 0.157|28.81 / 0.192|27.72 / 0.021|26.61 / 0.227|
-|RDCAB-RecursiveSRNet|32.29 / 0.078|28.64 / 0.105|27.62 / 0.012|26.16 / 0.150|
-|Split Vesrion|32.24 / 0.057|28.65 / 0.083|27.62 / 0.016|26.08 / 0.107|
+|RDN|32.47 / 0.018|28.81 / 0.023|27.72 / 0.017|26.61 / 0.040|
+|RDCAB-RecursiveSRNet|32.29 / 0.012|28.64 / 0.016|27.62 / 0.013|26.16 / 0.021|
+|Split Vesrion|32.24 / 0.015|28.65 / 0.018|27.62 / 0.018|26.08 / 0.0.026|
 
 |-|RDN|RDCAB-RecursvieSRNet|Split Version|
 |-|---|--------------------|-------------|
@@ -60,7 +60,7 @@ RDCAB-RecursiveSRNet, which was submitted to the existing IPIU conference, has a
 |-|---|--------------------|-------------|
 |Multi-Adds|1,309G|750G|567G|
 
-* Compared with the existing RDCAB-RecursvieSRNet, the performance decreased by 0.05 in Set5 and 0.08 in Urban100, but overall processing time was faster, the number of parameters was 1.75 times, and Multi-adds was 1.3 times lighter.
+* Compared with the existing RDCAB-RecursvieSRNet, the performance decreased by 0.05 in Set5 and 0.08 in Urban100, but the number of parameters was 1.75 times, and Multi-adds was 1.3 times lighter.
 
 ## Reference
 [RDN](https://arxiv.org/abs/1802.08797)
