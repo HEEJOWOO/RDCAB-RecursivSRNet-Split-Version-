@@ -18,7 +18,7 @@ RDCAB-RecursiveSRNet, which was submitted to the existing IPIU conference, has a
 
 
 ## Experiments
-* At this time, learning was conducted only at 4x magnification, and it will be studied at 2x and 3x magnifications in the future.
+* At this time, learning was conducted only at x4 magnification, and it will be studied at 2x and 3x magnifications in the future.
 
 * Check train.py for detailed network configuration.
 
