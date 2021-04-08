@@ -52,11 +52,11 @@ RDCAB-RecursiveSRNet, which was submitted to the existing IPIU conference, has a
 |RDCAB-RecursiveSRNet|32.29 / 0.012|28.64 / 0.016|27.62 / 0.013|26.16 / 0.021|
 |Split Vesrion|32.24 / 0.015|28.65 / 0.018|27.62 / 0.018|26.08 / 0.026|
 
-|-|RDN|RDCAB-RecursvieSRNet|Split Version|
+|x4|RDN|RDCAB-RecursvieSRNet|Split Version|
 |-|---|--------------------|-------------|
 |Parameters|22M|2.1M|1.2M|
 
-|-|RDN|RDCAB-RecursvieSRNet|Split Version|
+|x4|RDN|RDCAB-RecursvieSRNet|Split Version|
 |-|---|--------------------|-------------|
 |Multi-Adds|1,309G|750G|567G|
 
