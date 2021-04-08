@@ -97,7 +97,7 @@ if __name__ == '__main__':
         hr = np.expand_dims(np.array(hr).astype(np.float32).transpose([2, 0, 1]), 0) / 255.0
         lr = torch.from_numpy(lr).to(device)
         hr = torch.from_numpy(hr).to(device)
-		if args.self_ensemble:
+	if args.self_ensemble:
             with torch.no_grad():
                 Urban100_start = time.time()  # 시작 시간 저장
                 preds = x8_forward(lr,model).squeeze(0)
@@ -144,7 +144,7 @@ if __name__ == '__main__':
         hr = np.expand_dims(np.array(hr).astype(np.float32).transpose([2, 0, 1]), 0) / 255.0
         lr = torch.from_numpy(lr).to(device)
         hr = torch.from_numpy(hr).to(device)
-		if args.self_ensemble:
+	if args.self_ensemble:
             with torch.no_grad():
                 BSD100_start = time.time()  # 시작 시간 저장
                 preds = x8_forward(lr,model).squeeze(0)
@@ -188,7 +188,7 @@ if __name__ == '__main__':
         hr = np.expand_dims(np.array(hr).astype(np.float32).transpose([2, 0, 1]), 0) / 255.0
         lr = torch.from_numpy(lr).to(device)
         hr = torch.from_numpy(hr).to(device)
-		if args.self_ensemble:
+	if args.self_ensemble:
             with torch.no_grad():
                 Set14_start = time.time()  # 시작 시간 저장
                 preds = x8_forward(lr,model).squeeze(0)
@@ -228,7 +228,7 @@ if __name__ == '__main__':
         hr = np.expand_dims(np.array(hr).astype(np.float32).transpose([2, 0, 1]), 0) / 255.0
         lr = torch.from_numpy(lr).to(device)
         hr = torch.from_numpy(hr).to(device)
-		if args.self_ensemble:
+	if args.self_ensemble:
             with torch.no_grad():
                 Set5_start = time.time()  # 시작 시간 저장
                 preds = x8_forward(lr,model).squeeze(0)
